@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="McW-OU-etj" id="DDv-qg-P2b"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="McW-OU-etj" userLabel="Delegate" customClass="AppDelegate" customModule="NUTManager" customModuleProvider="target">
+            <connections>
+                <outlet property="appMenu" destination="tNn-bs-SmM" id="rUS-na-mW3"/>
+                <outlet property="configureMenu" destination="p1o-fi-yzX" id="4Uw-cV-My2"/>
+                <outlet property="quitMenu" destination="MHh-e2-kjC" id="cPX-6q-llA"/>
+                <outlet property="statusMenu" destination="gbF-Ar-NkL" id="tZX-2P-gxy"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="tNn-bs-SmM">
+            <items>
+                <menuItem title="Status: Not Running" id="gbF-Ar-NkL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Neu-rE-TrA"/>
+                <menuItem title="Configure..." id="p1o-fi-yzX" userLabel="Configure">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="hR6-ra-l7Y"/>
+                <menuItem title="Quit" id="MHh-e2-kjC" userLabel="Quit">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="McW-OU-etj" id="lgp-BV-UBe"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
