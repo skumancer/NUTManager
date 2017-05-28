@@ -7,17 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE80B1731ED2C3D400715079 /* RawRepresentableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80B1721ED2C3D400715079 /* RawRepresentableExtension.swift */; };
 		AEAC7BFB1EC7541000F791E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC7BFA1EC7541000F791E6 /* AppDelegate.swift */; };
 		AEAC7BFF1EC7541000F791E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAC7BFE1EC7541000F791E6 /* Assets.xcassets */; };
 		AEAC7C0A1EC7544A00F791E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAC7C091EC7544A00F791E6 /* MainMenu.xib */; };
+		AEEAC4E31EDA9CF200786DCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAC4E21EDA9CF200786DCA /* main.swift */; };
+		AEEAC4E91EDAA3C200786DCA /* UPSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAC4E81EDAA3C200786DCA /* UPSEvent.swift */; };
+		AEEAC4EA1EDAA3C200786DCA /* UPSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAC4E81EDAA3C200786DCA /* UPSEvent.swift */; };
+		AEFE68841EDAAFE000962A36 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE68831EDAAFE000962A36 /* ArrayExtension.swift */; };
+		AEFE68851EDAAFE000962A36 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE68831EDAAFE000962A36 /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AEEAC4DE1EDA9CF200786DCA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AE80B1721ED2C3D400715079 /* RawRepresentableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RawRepresentableExtension.swift; path = Extensions/RawRepresentableExtension.swift; sourceTree = "<group>"; };
 		AEAC7BF71EC7541000F791E6 /* NUTManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NUTManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAC7BFA1EC7541000F791E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAC7BFE1EC7541000F791E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEAC7C031EC7541000F791E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEAC7C091EC7544A00F791E6 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		AEEAC4E01EDA9CF200786DCA /* NUTManagerNotifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NUTManagerNotifier; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEAC4E21EDA9CF200786DCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AEEAC4E81EDAA3C200786DCA /* UPSEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UPSEvent.swift; path = Common/UPSEvent.swift; sourceTree = "<group>"; };
+		AEFE68831EDAAFE000962A36 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Common/ArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,13 +51,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEEAC4DD1EDA9CF200786DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE80B1711ED2C3BB00715079 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE80B1721ED2C3D400715079 /* RawRepresentableExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		AEAC7BEE1EC7541000F791E6 = {
 			isa = PBXGroup;
 			children = (
+				AEEAC4E71EDAA3A400786DCA /* Common */,
 				AEAC7BF91EC7541000F791E6 /* NUTManager */,
+				AEEAC4E11EDA9CF200786DCA /* NUTManagerNotifier */,
 				AEAC7BF81EC7541000F791E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AEAC7BF71EC7541000F791E6 /* NUTManager.app */,
+				AEEAC4E01EDA9CF200786DCA /* NUTManagerNotifier */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,12 +91,30 @@
 		AEAC7BF91EC7541000F791E6 /* NUTManager */ = {
 			isa = PBXGroup;
 			children = (
+				AE80B1711ED2C3BB00715079 /* Extensions */,
 				AEAC7BFA1EC7541000F791E6 /* AppDelegate.swift */,
 				AEAC7BFE1EC7541000F791E6 /* Assets.xcassets */,
 				AEAC7C031EC7541000F791E6 /* Info.plist */,
 				AEAC7C091EC7544A00F791E6 /* MainMenu.xib */,
 			);
 			path = NUTManager;
+			sourceTree = "<group>";
+		};
+		AEEAC4E11EDA9CF200786DCA /* NUTManagerNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAC4E21EDA9CF200786DCA /* main.swift */,
+			);
+			path = NUTManagerNotifier;
+			sourceTree = "<group>";
+		};
+		AEEAC4E71EDAA3A400786DCA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAC4E81EDAA3C200786DCA /* UPSEvent.swift */,
+				AEFE68831EDAAFE000962A36 /* ArrayExtension.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +137,23 @@
 			productReference = AEAC7BF71EC7541000F791E6 /* NUTManager.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AEEAC4DF1EDA9CF200786DCA /* NUTManagerNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEAC4E41EDA9CF200786DCA /* Build configuration list for PBXNativeTarget "NUTManagerNotifier" */;
+			buildPhases = (
+				AEEAC4DC1EDA9CF200786DCA /* Sources */,
+				AEEAC4DD1EDA9CF200786DCA /* Frameworks */,
+				AEEAC4DE1EDA9CF200786DCA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NUTManagerNotifier;
+			productName = NUTManagerNotifier;
+			productReference = AEEAC4E01EDA9CF200786DCA /* NUTManagerNotifier */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,6 +165,11 @@
 				ORGANIZATIONNAME = "Ricardo Chavarria";
 				TargetAttributes = {
 					AEAC7BF61EC7541000F791E6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S6BWLQXDC7;
+						ProvisioningStyle = Automatic;
+					};
+					AEEAC4DF1EDA9CF200786DCA = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = S6BWLQXDC7;
 						ProvisioningStyle = Automatic;
@@ -109,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				AEAC7BF61EC7541000F791E6 /* NUTManager */,
+				AEEAC4DF1EDA9CF200786DCA /* NUTManagerNotifier */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +212,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEAC4E91EDAA3C200786DCA /* UPSEvent.swift in Sources */,
 				AEAC7BFB1EC7541000F791E6 /* AppDelegate.swift in Sources */,
+				AE80B1731ED2C3D400715079 /* RawRepresentableExtension.swift in Sources */,
+				AEFE68841EDAAFE000962A36 /* ArrayExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEAC4DC1EDA9CF200786DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFE68851EDAAFE000962A36 /* ArrayExtension.swift in Sources */,
+				AEEAC4E31EDA9CF200786DCA /* main.swift in Sources */,
+				AEEAC4EA1EDAA3C200786DCA /* UPSEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +352,24 @@
 			};
 			name = Release;
 		};
+		AEEAC4E51EDA9CF200786DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6BWLQXDC7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEEAC4E61EDA9CF200786DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6BWLQXDC7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +389,16 @@
 				AEAC7C081EC7541000F791E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEAC4E41EDA9CF200786DCA /* Build configuration list for PBXNativeTarget "NUTManagerNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEAC4E51EDA9CF200786DCA /* Debug */,
+				AEEAC4E61EDA9CF200786DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
